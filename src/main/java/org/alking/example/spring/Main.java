@@ -4,8 +4,11 @@
 
 package org.alking.example.spring;
 
+import org.alking.example.spring.beans.PetStore;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
  * Main
@@ -16,11 +19,15 @@ import org.slf4j.LoggerFactory;
 public class Main {
 
     private static final Logger logger = LoggerFactory.getLogger(Main.class);
+
     public static void main(String[] args) {
         logger.info("main...");
 
+        ApplicationContext context = new ClassPathXmlApplicationContext("services.xml");
 
-
+// retrieve configured instance
+        PetStore petStore = context.getBean("petStore", PetStore.class);
+        logger.info("petStore:{}", petStore);
     }
 
 }
