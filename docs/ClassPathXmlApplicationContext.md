@@ -1,4 +1,4 @@
-# AbstractXmlApplicationContext
+# ClassPathXmlApplicationContext
 
 ```mermaid
 classDiagram
