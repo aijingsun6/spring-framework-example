@@ -1,7 +1,5 @@
-# context
+# AbstractXmlApplicationContext
 
-
-### AbstractXmlApplicationContext
 ```mermaid
 classDiagram
     AbstractXmlApplicationContext <|-- ClassPathXmlApplicationContext : extends
