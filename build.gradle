@@ -29,8 +29,13 @@ dependencies {
     implementation group: 'ch.qos.logback', name: 'logback-core', version: '1.2.3'
     implementation group: 'ch.qos.logback', name: 'logback-classic', version: '1.2.3'
     implementation group: 'org.slf4j', name: 'slf4j-api', version: '1.7.30'
+    implementation("org.springframework:spring-aop:6.2.18")
     implementation("org.springframework:spring-beans:6.2.18")
     implementation("org.springframework:spring-context:6.2.18")
+    implementation("org.springframework:spring-core:6.2.18")
+    implementation("org.springframework:spring-web:6.2.18")
+    implementation("org.springframework:spring-webmvc:6.2.18")
+    implementation("org.springframework:spring-tx:6.2.18")
 }
 
 application {
