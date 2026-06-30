@@ -24,8 +24,6 @@ public class Main {
         logger.info("main...");
 
         ApplicationContext context = new ClassPathXmlApplicationContext("services.xml");
-
-// retrieve configured instance
         PetStore petStore = context.getBean("petStore", PetStore.class);
         logger.info("petStore:{}", petStore);
     }
