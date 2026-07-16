@@ -24,8 +24,9 @@ public class Main {
         logger.info("main...");
 
         ApplicationContext context = new ClassPathXmlApplicationContext("services.xml");
-        PetStore petStore = context.getBean("petStore", PetStore.class);
-        logger.info("petStore:{}", petStore);
+        PetStore petStore = context.getBean(PetStore.class);
+        String name = petStore.getName();
+        logger.info("petStore:{}, {}", petStore, name);
     }
 
 }
